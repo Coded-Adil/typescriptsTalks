@@ -1,3 +1,4 @@
+// Function related types
 // Basic Function 
 function add(a: number, b: number): number {
     return a + b;
@@ -27,3 +28,6 @@ const divide = (a: number, b: number): number => a / b;
 // Function Types
 let calculate: (x: number, y: number) => number;
 calculate = add;
+
+let str: string = "Functions"
+console.log(str);
