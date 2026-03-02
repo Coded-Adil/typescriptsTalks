@@ -1,4 +1,5 @@
 "use strict";
+// Every Function related types
 // Basic Function 
 function add(a, b) {
     return a + b;
