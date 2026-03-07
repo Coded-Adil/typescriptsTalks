@@ -32,3 +32,12 @@ class Employee {
 }
 let jack = new Employee(1, "Jack", "Engineering");
 console.log(jack.getDetails());
+class Menager extends Employee {
+    constructor(id, name, department, teamSize) {
+        super(id, name, department);
+        this.teamSize = teamSize;
+    }
+    getTeamInfo() {
+        return `${this.name} manages a team of ${this.teamSize} people in the ${this.department} department.`;
+    }
+}
