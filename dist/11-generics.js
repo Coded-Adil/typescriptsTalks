@@ -19,3 +19,20 @@ let stringNumberPair = {
     value: 30
 };
 // Generic Class
+class DataStorage {
+    constructor() {
+        this.data = [];
+    }
+    addItem(item) {
+        this.data.push(item);
+    }
+    removeItem(item) {
+        this.data = this.data.filter((i) => i !== item);
+    }
+    getItems() {
+        return [...this.data];
+    }
+}
+let textStorage = new DataStorage();
+textStorage.addItem("Hello");
+// Generic Constraints

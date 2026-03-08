@@ -32,3 +32,23 @@ let stringNumberPair: KeyValuePair<string, number> = {
 };
 
 // Generic Class
+class DataStorage<T> {
+    private data: T[] = [];
+
+    addItem(item: T) {
+        this.data.push(item);
+    }
+
+    removeItem(item: T) {
+        this.data = this.data.filter((i) => i !== item);
+    }
+
+    getItems(): T[] {
+        return [...this.data];
+    }
+}
+
+let textStorage = new DataStorage<string>();
+textStorage.addItem("Hello");
+
+// Generic Constraints
