@@ -52,3 +52,14 @@ let textStorage = new DataStorage<string>();
 textStorage.addItem("Hello");
 
 // Generic Constraints
+interface Lengthwise {
+    length: number;
+}
+
+function logLength<T extends Lengthwise>(arg: T): T {
+    console.log(arg.length);
+    return arg;
+}
+
+logLength("Hello");
+logLength([1, 2, 3]);

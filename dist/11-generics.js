@@ -35,4 +35,9 @@ class DataStorage {
 }
 let textStorage = new DataStorage();
 textStorage.addItem("Hello");
-// Generic Constraints
+function logLength(arg) {
+    console.log(arg.length);
+    return arg;
+}
+logLength("Hello");
+logLength([1, 2, 3]);
