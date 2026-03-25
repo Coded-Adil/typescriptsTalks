@@ -34,9 +34,17 @@ interface Config {
 }
 
 const config: Config = {
-  apiKey: "abc123",
+  apiKey: "adil123",
   author: "Adil",
 };
+
+/* const config: Config = {
+  apiKey: "adil123",
+  author: "Adil",
+};
+*/
+// config.apiKey = "newKey"; // Error: Cannot assign to 'apiKey' because it is a read-only property.
+// Not among best practices ->>
 
 // ❌ DON'T: Use 'any' unless absolutely necessary
 // let data: any = fetchData(); // Bad
